@@ -1,0 +1,93 @@
+body, html {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #474747;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background: transparent;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar .navbar-collapse {
+  border: 0;
+}
+
+.navbar-toggle {
+  border: none;
+  border-radius: 0px;
+  background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.myPanel {
+  border: 1px solid #687D6D;
+  border-radius: 5px;
+  background-color: #FFFAFF;
+  box-shadow: 0 0 4px #ccc;
+  margin: 3%;
+}
+
+.myPanel .header {
+  background: #FDFDFD;
+  border-radius: 5px 5px 0 0;
+  color: #000000;
+  padding: 10px 20px;
+}
+
+.myPanel .body {
+  padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+  display: none;
+}
+
+.myPanel:hover .showOnHover {
+  display: inline-block;
+}
+
+.carousel {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
