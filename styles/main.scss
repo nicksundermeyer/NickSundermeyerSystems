@@ -7,26 +7,83 @@ body, html{
     background-color: rgb(240, 240, 240);
 }
 
+.bg{
+    background-image: url("/res/DOOM_Cover.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button:focus{
+    outline: 0;
+}
+
 // navbar
-// From this tutorial: https://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/
 .navbar{
-    background: transparent;
+    background: transparent !important;
+    border: none;
+    margin-bottom: 0;
+
+    .navbar-brand{
+        color: rgb(71, 71, 71);
+    }
+    .nav-link{
+        color: rgb(71, 71, 71);
+    }
+
+    .navbar-toggler{
+        border: none;
+        border-radius: 0px;
+        background: transparent !important;
+    
+        .icon-bar {
+            background-color: rgb(71, 71, 71);
+            display: block;
+            width: 22px;
+            height: 3px;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            transition: all 0.2s;
+        }
+        
+    }
+}
+
+.navbar1{
+    background: transparent !important;
     border: none;
     margin-bottom: 0;
 
     .navbar-collapse{
         border:0;
     }
-}
-.navbar-toggle{
-    border: none;
-    border-radius: 0px;
-    background: transparent !important;
-
-    .icon-bar {
-        width: 22px;
-        transition: all 0.2s;
+    .navbar-brand{
+        color: rgb(240, 240, 240);
     }
+    .nav-link{
+        color: rgb(240, 240, 240) !important;
+    }
+    .navbar-toggler{
+        border: none;
+        border-radius: 0px;
+        background: transparent !important;
+    
+        .icon-bar {
+            background-color: rgb(240, 240, 240);
+            display: block;
+            width: 22px;
+            height: 3px;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            transition: all 0.2s;
+        }
+        
+    }
+}
+
+// From this tutorial: https://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/
+.navbar-toggler{
     .top-bar {
         transform: rotate(45deg);
         transform-origin: 10% 10%;
@@ -51,6 +108,7 @@ body, html{
         }
     }
 }
+
 // My Panel
 .myPanel{
     border: 1px solid #687D6D;
@@ -88,4 +146,10 @@ body, html{
 }
 .carousel-control.left, .carousel-control.right {
     background-image: none;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
