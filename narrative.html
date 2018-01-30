@@ -29,12 +29,6 @@
         </div>
     </nav>
 
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-    </div>
-
     <div id="page1" class="pageDiv">
         <h1 class="center" id="doomHeader">
             THE HISTORY OF
@@ -43,15 +37,9 @@
     </div>
 
     <div id="page2" class="pageDiv">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            </div>
-        </div>
         <div class="card text-white bg-dark mb-3 center" style="max-width: 90%">
-            <div class="card-header">The History of DOOM</div>
-            <div class="card-body">
+            <div class="card-header">DOOM (1993)</div>
+            <div class="card-body scrollable">
                 <h5 class="card-title">Dark card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
@@ -79,16 +67,6 @@
         <li class="nav-item">
             <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#top" role="tab" aria-controls="pills-home" aria-selected="true">Title</a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">DOOM</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-        </li>
         <li class="nav-item">
             <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#page2" role="tab" aria-controls="pills-profile" aria-selected="false">DOOM</a>
         </li>
@@ -111,10 +89,12 @@
     <script>
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
+            console.log($($.attr(this, 'href')).offset().top);
 
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 500);
+
         });
     </script>
 

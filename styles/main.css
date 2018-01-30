@@ -4,16 +4,20 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
   background-color: #f0f0f0;
 }
 
+.scrollable {
+  overflow-y: auto;
+  height: 80%;
+}
+
 .doom-bg {
-  background-image: url("/res/DOOM_Cover.jpg");
+  background-image: url("DOOM_Cover.jpg");
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 button:focus {
@@ -165,6 +169,7 @@ button:focus {
 .pageDiv {
   width: 100%;
   height: 100%;
+  background-color: transparent;
 }
 
 #doomHeader {
