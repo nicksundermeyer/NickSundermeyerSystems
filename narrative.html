@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="bg">
-    <nav class="navbar1 navbar navbar-expand-lg navbar-light">
+<body class="doom-bg">
+    <nav class="navbar1 navbar navbar-expand-lg navbar-light" id="top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -29,15 +29,94 @@
         </div>
     </nav>
 
-    <div class="page1">
-
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
     </div>
 
-    <script src="scripts/game.js"></script>
+    <div id="page1" class="pageDiv">
+        <h1 class="center" id="doomHeader">
+            THE HISTORY OF
+        </h1>
+        <img src="/res/DOOM_Logo.png" class="center" id="doomLogo">
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <div id="page2" class="pageDiv">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-dark mb-3 center" style="max-width: 90%">
+            <div class="card-header">The History of DOOM</div>
+            <div class="card-body">
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="pageDiv">
+        <center>
+            <h3>
+                Creative Statement
+            </h3>
+        </center>
+
+        <div class="myPanel">
+            <div class="body">
+                <p>
+                    My primary interest in art lies in imagining and creating new worlds to explore. This worldbuilding includes creating environments and spaces, but also situations, characters, and the stories surrounding these new places. These different parts weave together to create textured creations which are both visually interesting and reflect upon our own world. The worlds I create, whether they be castles built from Lego or levels of a videogame, act as a counterpoint to the real world, a place where the normal rules don’t apply and so can be examined from an outside perspective. I start from a simple idea for the place I want to create, adding layers and pieces to the world to expand on this idea and tying all the pieces together into a cohesive whole that flows through the space with a purpose. I try to make worlds that engage, which have a concrete idea of what they are but also encourage the viewer to imagine beyond the borders of the environment itself.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#top" role="tab" aria-controls="pills-home" aria-selected="true">Title</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">DOOM</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#page2" role="tab" aria-controls="pills-profile" aria-selected="false">DOOM</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#page3" role="tab" aria-controls="pills-contact" aria-selected="false">DOOM 2</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Scroll script -->
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
 
 </body>
 
