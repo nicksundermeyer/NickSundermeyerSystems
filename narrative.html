@@ -4,9 +4,10 @@
     <Title>Info</Title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/narrative.css">
 </head>
 
-<body class="doom-bg">
+<body>
     <nav class="navbar1 navbar navbar-expand-lg navbar-light" id="top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
@@ -29,34 +30,81 @@
         </div>
     </nav>
 
-    <div id="page1" class="pageDiv">
+    <div id="page1" name="page1" class="pageDiv">
         <h1 class="center" id="doomHeader">
             THE HISTORY OF
         </h1>
         <img src="res/DOOM_Logo.png" class="center" id="doomLogo">
     </div>
 
-    <div id="page2" class="pageDiv">
-        <div class="card text-white bg-dark mb-3 center" style="max-width: 90%">
+    <div id="page2" name="page2" class="pageDiv">
+        <div class="card text-dark bg-light mb-3 center" style="overflow: hidden;">
             <div class="card-header">DOOM (1993)</div>
+
+            <img src="res/doom-1.jpg" id="pageImage" class="center">
+
             <div class="card-body scrollable">
-                <h5 class="card-title">Dark card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"> The original DOOM game, developed by id Software in 1993, is widely considered one of the most influential games of all time. The game pushed the envelope in terms of what was possible with immersive 3D graphics at the time, allowing players to explore the sci-fi corridors of Phobos, Deimos, and finally Hell itself while fighting enemies and collecting a variety of weapons. The gameplay was fast and frantic, with enemies coming from all around the player.
+
+                    <p class="card-text">The game was also a pioneer in the areas of online networked play, with a competitive online mode that allowed players to battle against each other, as well as customized modifications to the game created by players. The game is credited with catapulting the FPS genre into the massive role it has in the games industry today.</p>
+                </p>
+                <p class="card-text">
+                    id Software went on to continue the series with DOOM 2 and DOOM 3, as well as multiple spin-offs and other titles. id them went on hiatus from the series from 2004 until 2016, when they released the first new DOOM game since DOOM 3.
+                </p>
+                <center>
+                    <a href="#graphics" class="btn btn-dark" role="button" aria-pressed="true">Graphics Technology</a>
+                </center>
             </div>
         </div>
     </div>
 
-    <div id="page3" class="pageDiv">
-        <center>
-            <h3>
-                Creative Statement
-            </h3>
-        </center>
+    <div id="graphics" name="graphics" class="pageDiv" style="display: inline-block; float: right;">
+        <div class="card text-light bg-dark mb-3 center">
+            <div class="card-header">Pushing Graphics Technology</div>
 
-        <div class="myPanel">
-            <div class="body">
-                <p>
-                    My primary interest in art lies in imagining and creating new worlds to explore. This worldbuilding includes creating environments and spaces, but also situations, characters, and the stories surrounding these new places. These different parts weave together to create textured creations which are both visually interesting and reflect upon our own world. The worlds I create, whether they be castles built from Lego or levels of a videogame, act as a counterpoint to the real world, a place where the normal rules don’t apply and so can be examined from an outside perspective. I start from a simple idea for the place I want to create, adding layers and pieces to the world to expand on this idea and tying all the pieces together into a cohesive whole that flows through the space with a purpose. I try to make worlds that engage, which have a concrete idea of what they are but also encourage the viewer to imagine beyond the borders of the environment itself.
+            <div id="carouselExamleSlidesOnly" class="carousel slide center" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="..." alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="..." alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="..." alt="Third slide">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body scrollable">
+                <p class="card-text">
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" name="page3" class="pageDiv">
+        <div class="card text-dark bg-light mb-3 center">
+            <div class="card-header">DOOM 2 (1994)</div>
+
+            <img src="doom-2." <div class="card-body scrollable">
+            <p class="card-text">
+
+            </p>
+            <center>
+                <a href="#enemies" class="btn btn-dark" role="button" aria-pressed="true">Enemies of DOOM</a>
+                <a href="#" class="btn btn-dark" role="button" aria-pressed="true">Level Design</a>
+            </center>
+        </div>
+    </div>
+    </div>
+
+    <div id="enemies" name="enemies" class="pageDiv">
+        <div class="card text-light bg-dark mb-3 center">
+            <div class="card-header">The Monsters of DOOM</div>
+            <div class="card-body scrollable">
+                <p class="card-text">
 
                 </p>
             </div>
@@ -89,15 +137,13 @@
     <script>
         $(document).on('click', 'a[href^="#"]', function (event) {
             event.preventDefault();
-            console.log($($.attr(this, 'href')).offset().top);
 
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
-            }, 500);
+            }, 300);
 
         });
     </script>
-
 </body>
 
 </html>

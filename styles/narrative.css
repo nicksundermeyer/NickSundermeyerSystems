@@ -1,0 +1,95 @@
+body, html {
+  background-image: url("DOOM_Cover.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-tabs {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-tabs a {
+  color: white;
+}
+
+.navbar1 {
+  background: transparent !important;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar1 .navbar-collapse {
+  border: 0;
+}
+
+.navbar1 .navbar-brand {
+  color: #f0f0f0;
+}
+
+.navbar1 .nav-link {
+  color: #f0f0f0 !important;
+}
+
+.navbar1 .navbar-toggler {
+  border: none;
+  border-radius: 0px;
+  background: transparent !important;
+}
+
+.navbar1 .navbar-toggler .icon-bar {
+  background-color: #f0f0f0;
+  display: block;
+  width: 22px;
+  height: 3px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  transition: all 0.2s;
+}
+
+.carousel {
+  width: 70%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.carousel img {
+  height: 100%;
+  width: auto;
+}
+
+.pageDiv {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#pageImage {
+  height: 50%;
+  width: auto;
+  max-width: 90%;
+  max-height: 50%;
+  margin-bottom: 10px;
+}
+
+#doomHeader {
+  color: #f0f0f0;
+  text-align: center;
+  font-size: 100;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#doomLogo {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  width: 95% !important;
+  height: 90% !important;
+}

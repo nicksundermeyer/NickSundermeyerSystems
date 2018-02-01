@@ -8,30 +8,12 @@ body, html {
 }
 
 .scrollable {
-  overflow-y: auto;
+  overflow-y: auto !important;
   height: 80%;
-}
-
-.doom-bg {
-  background-image: url("DOOM_Cover.jpg");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 button:focus {
   outline: 0;
-}
-
-.nav-tabs {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.nav-tabs a {
-  color: white;
 }
 
 .navbar {
@@ -56,40 +38,6 @@ button:focus {
 
 .navbar .navbar-toggler .icon-bar {
   background-color: #474747;
-  display: block;
-  width: 22px;
-  height: 3px;
-  margin-top: 3px;
-  margin-bottom: 2px;
-  transition: all 0.2s;
-}
-
-.navbar1 {
-  background: transparent !important;
-  border: none;
-  margin-bottom: 0;
-}
-
-.navbar1 .navbar-collapse {
-  border: 0;
-}
-
-.navbar1 .navbar-brand {
-  color: #f0f0f0;
-}
-
-.navbar1 .nav-link {
-  color: #f0f0f0 !important;
-}
-
-.navbar1 .navbar-toggler {
-  border: none;
-  border-radius: 0px;
-  background: transparent !important;
-}
-
-.navbar1 .navbar-toggler .icon-bar {
-  background-color: #f0f0f0;
   display: block;
   width: 22px;
   height: 3px;
@@ -151,37 +99,7 @@ button:focus {
   display: inline-block;
 }
 
-.carousel {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.carousel-control.left, .carousel-control.right {
-  background-image: none;
-}
-
 .center {
-  margin: auto;
-}
-
-.pageDiv {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
-
-#doomHeader {
-  color: #f0f0f0;
-  text-align: center;
-  font-size: 100;
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-#doomLogo {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
