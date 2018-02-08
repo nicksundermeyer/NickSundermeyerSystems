@@ -12,8 +12,9 @@ body, html{
     height: 80%;
 }
 
-button:focus{
-    outline: 0;
+button{
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 // navbar

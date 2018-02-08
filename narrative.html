@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <nav class="navbar1 navbar navbar-expand-lg navbar-light" id="top">
+    <div id="top"></div>
+    <!-- <nav class="navbar1 navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -28,7 +29,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
 
     <div id="page1" name="page1" class="pageDiv">
         <h1 class="center" id="doomHeader">
@@ -38,7 +39,8 @@
     </div>
 
     <div id="page2" name="page2" class="pageDiv">
-        <div class="card text-dark bg-light mb-3 center" style="overflow: hidden;">
+        <div class="flames-bg"></div>
+        <div class="card text-light bg-transparent mb-3 center" style="overflow: hidden;">
             <div class="card-header">DOOM (1993)</div>
 
             <img src="res/doom1/1.jpg" class="pageImage center">
@@ -52,7 +54,7 @@
                     id Software went on to continue the series with DOOM 2 and DOOM 3, as well as multiple spin-offs and other titles. id them went on hiatus from the series from 2004 until 2016, when they released the first new DOOM game since DOOM 3.
                 </p>
                 <center>
-                    <a href="#graphics" class="btn btn-dark" role="button" aria-pressed="true">Graphics Technology</a>
+                    <a href="#graphics" class="btn btn-light" role="button" aria-pressed="true">Graphics Technology</a>
                 </center>
             </div>
         </div>
@@ -79,6 +81,7 @@
     </div>
 
     <div id="page3" name="page3" class="pageDiv">
+        <div class="flames-bg"></div>
         <div class="card text-dark bg-light mb-3 center">
             <div class="card-header">DOOM 2 (1994)</div>
 
@@ -91,8 +94,8 @@
                     The most interesting part of the refinement is the change in level design philosophy. The fairly linear levels of the original turned into expansive labyrinths with the second iteration, with multiple paths through the level and a variety of secrets and powerups that could be discovered by the player through exploration. The influences from this level design can be seen in 2016's reboot as well as many of the popular games that came between.
                 </p>
                 <center>
-                    <a href="#enemies" class="btn btn-dark" role="button" aria-pressed="true">Enemies of DOOM</a>
-                    <a href="#level" class="btn btn-dark" role="button" aria-pressed="true">Level Design</a>
+                    <a href="#enemies" class="btn btn-light" role="button" aria-pressed="true">Enemies of DOOM</a>
+                    <a href="#level" class="btn btn-light" role="button" aria-pressed="true">Level Design</a>
                 </center>
             </div>
         </div>
@@ -142,6 +145,7 @@
     </div>
 
     <div id="page4" name="page4" class="pageDiv">
+        <div class="flames-bg"></div>
         <div class="card text-dark bg-light mb-3 center">
             <div class="card-header">DOOM 3 (2005)</div>
 
@@ -154,7 +158,7 @@
                     The game was critically and comercially successful, with praise for its next-generation graphics and presentation. It also brought DOOM's darker atmosphere into the modern-day, and tested the waters for real storytelling in a DOOM game. Despite these advances, it also went back to a more linear style to incorporate the story, which many saw as a step backwards from the open-ended levels that players were used to from the franchise.
                 </p>
                 <center>
-                    <a href="#story" class="btn btn-dark" role="button" aria-pressed="true">Storytelling</a>
+                    <a href="#story" class="btn btn-light" role="button" aria-pressed="true">Storytelling</a>
                 </center>
             </div>
         </div>
@@ -177,6 +181,7 @@
     </div>
 
     <div id="page5" name="page5" class="pageDiv">
+        <div class="flames-bg"></div>
         <div class="card text-dark bg-light mb-3 center">
             <div class="card-header">DOOM 2016</div>
 
@@ -224,11 +229,16 @@
             <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#page5" role="tab" aria-controls="pills-contact" aria-selected="false">DOOM 2016</a>
         </li>
     </ul>
+
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
     </div>
+
+    <!-- Credit to this youtube video for the audio mix https://www.youtube.com/watch?v=7X-uj8HdXkI -->
+    <audio autoplay loop id="player" src="audio/mix.mp3"></audio>
+    <button id="pauseButton" onclick="togglePlayPause()" type="button" class="btn btn-light" style="position: fixed; bottom: 0; right: 0;">Pause</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -244,6 +254,22 @@
             }, 0);
 
         });
+    </script>
+
+    <!-- Music script -->
+    <script>
+        document.getElementById("player").volume = 0.5;
+
+        function togglePlayPause() {
+            var x = document.getElementById("pauseButton");
+            if (x.innerHTML === "Pause") {
+                document.getElementById("player").pause();
+                x.innerHTML = "Play";
+            } else {
+                document.getElementById("player").play();
+                x.innerHTML = "Pause";
+            }
+        }
     </script>
 </body>
 
